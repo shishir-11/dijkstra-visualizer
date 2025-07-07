@@ -1,6 +1,6 @@
 # Introduction
 To run the project 
-```bash
+``` bash
 $ sudo apt update
 $ sudo apt install libsfml-dev
 $ git clone https://github.com/shishir-11/dijkstra-visualizer.git
