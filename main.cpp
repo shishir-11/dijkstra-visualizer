@@ -462,13 +462,14 @@ int main()
                         {
                             if (nodes[i].contains(x, y))
                             {
-                                nodes[i].toggleColor(1);
-                                if (nodes[i].color == 0)
+                                if (selectedNodes.size()==0 or selectedNodes[0]==i)
                                 {
+                                    nodes[i].toggleColor(1);
                                     selectedNodes.push_back(i);
                                 }
                                 else
                                 {
+                                    nodes[i].toggleColor(0);
                                     selectedNodes.erase(std::remove(selectedNodes.begin(), selectedNodes.end(), i), selectedNodes.end());
                                 }
                                 nodeClicked = true;
